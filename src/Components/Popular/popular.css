@@ -1,0 +1,72 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 80px 20px;
+    background: #f9f9f9;
+    min-height: 70vh;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-bottom: 150px;
+}
+
+.popular h1 {
+    color: #222;
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.popular hr {
+    width: 220px;
+    height: 6px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #ff6b81, #ff4757);
+    margin: 10px 0 0 0;
+}
+
+.popular-item {
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.popular-item > * {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popular-item > *:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1024px) {
+    .popular h1 {
+        font-size: 40px;
+    }
+
+    .popular hr {
+        width: 180px;
+    }
+
+    .popular-item {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .popular h1 {
+        font-size: 32px;
+    }
+
+    .popular-item {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
