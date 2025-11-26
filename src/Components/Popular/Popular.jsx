@@ -9,12 +9,12 @@ export const Popular = () => {
   useEffect(() => {
     
     // Women API
-    fetch("http://localhost:4000/popularwomen")
+    fetch("https://e-commerce-backend-jwbc.onrender.com/popularwomen")
       .then((response) => response.json())
       .then((data) => setPopularWomen(data));
 
     // Men API
-    fetch("http://localhost:4000/popularmen")
+    fetch("https://e-commerce-backend-jwbc.onrender.com/popularmen")
       .then((response) => response.json())
       .then((data) => setPopularMen(data));
   }, []);

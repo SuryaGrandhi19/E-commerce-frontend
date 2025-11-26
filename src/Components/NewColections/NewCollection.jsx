@@ -7,7 +7,7 @@ export const NewCollection = () => {
 
   const [new_collection,setNew_collection]=useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/newcollections")
+    fetch("https://e-commerce-backend-jwbc.onrender.com/newcollections")
       .then(res => res.json())
       .then(data => setNew_collection(data))
       .catch(err => console.log("Error fetching new collections:", err));
